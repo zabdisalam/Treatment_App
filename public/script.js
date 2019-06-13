@@ -13,7 +13,6 @@ function check() {
      var questionTwo = document.quiz.question2.value;
      var questionThree = document.quiz.question3.value;
      var subQuestion = document.querySelector('#mc12').value;
-     var subQuestions = document.querySelector('#mc12');
      var name = document.querySelector('#name').innerHTML;
      var result1;
      var result2;
