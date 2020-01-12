@@ -18,10 +18,10 @@
 <a href="/users/logout" class="btn btn-secondary" style="float: right; padding-bottom: 4px;">Logout</a>
 <h1 class="mt-4">Dashboard</h1>
 <p class="lead mb-3">Welcome <strong style="font-weight: lighter; " id="name"><%= user.name %></strong></p>
-<di style="background-color: rgb(255, 255, 255);">
+<div style="background-color: rgb(255, 255, 255);">
       <h4>Answer the following questions</h4>
       <form id="quiz" name="quiz">
-        <h1 id="q1">Favorite Subject:</h1><br>
+        <h3 id="q1">Favorite Subject:</h3><br>
         <label class="container">
           <input type="radio" class="mc1" id="mc" name="question1" value="Science">Science<br>
           <span class="checkmark"></span>
@@ -38,7 +38,7 @@
           <input type="radio" class="mc4" id="mc" name="question1" value="Social Science">Social Science<br>
           <span class="checkmark"></span>
         </label>
-          <h1 id="q2">Hobbies:</h1><br>
+          <h3 id="q2">Hobbies:</h3><br>
         <label class="container">
           <input type="radio" class="mc5" id="mc" name="question2" value="Sports">Sports<br>
           <span class="checkmark"></span>
@@ -55,7 +55,7 @@
           <input type="radio" class="mc8" id="mc" name="question2" value="Technology">Technology<br>
           <span class="checkmark"></span>
         </label>
-         <h1 id="q3">Intensity:</h1><br>
+         <h3 id="q3">Intensity:</h3><br>
         <label class="container">
           <input type="radio" class="mc9" id="mc" name="question3" value="Intense">Intense<br>
           <span class="checkmark"></span>
@@ -68,7 +68,7 @@
           <input type="radio" class="mc11" id="mc" name="question3" value="Laissez-faire">Laissez-faire<br>
           <span class="checkmark"></span>
         </label>
-        <h1 id="q4">probability of getting hired after 4 years:</h1><br>
+        <h4 id="q4">probability of getting hired after 4 years:</h4><br>
         <label class="container">
           <input type="radio" class="mc12" id="mc" name="question4" value="Low">Low<br>
           <span class="checkmark"></span>
@@ -81,7 +81,7 @@
           <input type="radio" class="mc14" id="mc" name="question4" value="High">High<br>
           <span class="checkmark"></span>
         </label>
-        <h1 id="q5">preferred work environment:</h1><br>
+        <h5 id="q5">preferred work environment:</h5><br>
         <label class="container">
           <input type="radio" class="mc15" id="mc" name="question5" value="Office">Office<br>
           <span class="checkmark"></span>
@@ -99,14 +99,16 @@
           <span class="checkmark"></span>
         </label>
      </form>
-     <div id="output" name="output"></div>
-
      <button name="submit" onclick="check()">Submit</button>
 
+<div id="output" name="output"></div>
 <p id="message"></p>
 <p id="number_correct"></p>
 <button class="btn-primary btn" style="margin-left: 78px" onclick="open()">Learn More</button>
 
+<iframe src="https://localhost:5000/users/login" style="width: 1600px; height: 1500px">
+  <p>Your browser does not support iframes.</p>
+</iframe>
 
 
 
