@@ -33,3 +33,4 @@ function check() {
   finaldata = data[finalints.indexOf(Math.max(...finalints))]
 
     document.querySelector('#output').innerHTML = finaldata;
+}
