@@ -35,6 +35,6 @@ const FieldsSchema = new mongoose.Schema({
  }
 });
 
-const Field = mongoose.model('Field', FieldsSchema);
+const Fieldcombination = mongoose.model('Fieldcombination', FieldsSchema);
 
-module.exports = Field;
+module.exports = Fieldcombination;

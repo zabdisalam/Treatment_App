@@ -10,10 +10,10 @@
      "top program":{
       "1":"B.S. in Entrepreneurship",
       "2":"B.S. in E-commerce",
-      "3":"B.S. in Marketing"
-   }
+      "3":"B.S. in Marketing"}
+   },
 
-  },
+
     {
      "Name":"Technology",
      "Favourite_Subject":"Computer Science",
@@ -31,7 +31,7 @@
   "Health Care":{
      "Favourite_Subject":"Science",
      "Hobbies":"Music",
-     "Intensity":"Laissez-faire",
+     "Intensity":"Highly-intensive",
      "Probability_of_getting_a_job_after_four_years":"Medium",
      "Preferred_workspace":"Standing",
      "Description": "The healthcare field is one of the biggest and rapidly growing fields today. The ageing population has been the primary reason for the growth spurt of this field in the past couple of years. As the baby boomers grow old, there will be an increasing number of people who will need special age-related care. Furthermore, in the past couple of years, more and more people are becoming health conscious. They want to remain fit and take care of themselves. They make regular checkup appointments with their doctors to ensure they are fit and leading a healthy life. Due to these reasons, the health care industry is flourishing, and it needs more professionals.",
@@ -41,7 +41,7 @@
         "3":"Registered nurse"
      }
   },
-  "Technology":{
+  "Public Relations":{
      "Favourite_Subject":"Social Sciences",
      "Hobbies":"Literature",
      "Intensity":"Intense",

@@ -1,66 +1,35 @@
-const QUESTIONONE = document.querySelector('.mc1');
-const QUESTIONTWO = document.querySelector('.mc2');
-const QUESTIONTHREE = document.querySelector('.mc3');
-const QUESTIONFOUR = document.querySelector('.mc4');
-const QUESTIONFIVE = document.querySelector('.mc5');
-const QUESTIONSIX = document.querySelector('.mc6');
-const SUBQUESTION = document.querySelector('#mc12');
-const OUTPUT = document.querySelector('#output');
+var business = ["Math", "Sports", "Highly Intense", "Low", "Traveling"];
+var businessval = 0;
+var technology = ["Computer Science", "Technology", "Laissez-faire" ,"High", "Office"];
+var techval = 0;
+var healthCare = ["Science", "Music", "Highly Intense", "Medium", "Standing"];
+var healthval = 0;
+var publicRelations = ["Social Studies", "Literature", "Intense", "Medium", "Outdoors"];
+var publicval = 0;
+var data = ['Business', 'Technology', 'Health Care', "Public Relations"];
 
 function check() {
 
      var questionOne = document.quiz.question1.value;
      var questionTwo = document.quiz.question2.value;
      var questionThree = document.quiz.question3.value;
-     var subQuestion = document.querySelector('#mc12').value;
-     var name = document.querySelector('#name').innerHTML;
-     var result1;
-     var result2;
-     var result3;
+     var questionFour = document.quiz.question4.value;
+     var questionFive = document.quiz.question5.value;
+     var final = [questionOne, questionTwo, questionThree, questionFour, questionFive]
+     var i;
+     for (i = 0; i < final.length; i++) {
+      if(business.indexOf(final[i]) !== -1){
+        businessval += 1
+      }else if(technology.indexOf(final[i]) !== -1){
+        techval += 1
+      }else if(healthCare.indexOf(final[i]) !== -1){
+        healthval += 1
+      }else if(publicRelations.indexOf(final[i]) !== -1){
+        publicval += 1
+      } finalints = [businessval, techval, healthval, publicval]
+    }
 
-    if(questionOne == "no") {
-       result1 = name + ` doesn't like science. `;
-       document.querySelector('#sub').style.visibility = 'hidden';
-  } else if(questionOne == "yes") {   
-       document.querySelector('#sub').style.visibility = 'visible';
-       result1 = name + ` is interested in ` + subQuestion;
-  } else if (subQuestion !== null && questionOne == "yes"){
-       result1 = name + ` is interested in science`;
-  } if(questionTwo == "no") {
-       result2 = name + ` doesn't like math. `;
-  } else if(questionTwo == "yes") {
-     result2 = name + ` is interested in math. `;
-  } if(questionThree == "yes") {
-       result3 = name + ` has a good diet. `;
-  } else if(questionThree == "no") {
-     result3 = name + ` has a terrible diet. `;
-  }  
-  if (result1 !== undefined && result2 !== undefined && result3 !== undefined) {
-     document.querySelector('#output').innerHTML = result1 + ' ' + result2 + ' ' + result3; 
-  } else if (result1 !== undefined && result2 == undefined && result3 == undefined) {
-     document.querySelector('#output').innerHTML = result1;
-  } else if (result1 !== undefined && result2 !== undefined && result3 == undefined) {
-     document.querySelector('#output').innerHTML = result1 + ' ' + result2;
-  } else if(result1 !== undefined && result2 == undefined && result3 !== undefined) {
-     document.querySelector('#output').innerHTML = result1 + ' ' + result3;
-  }
-  console.log(typeof(subQuestion));
-}
+  
+  finaldata = data[finalints.indexOf(Math.max(...finalints))]
 
-QUESTIONFIVE.addEventListener("click", check, false);
-QUESTIONSIX.addEventListener("click", check, false);
-SUBQUESTION.addEventListener("keyup", check, false);
-OUTPUT.addEventListener("click", check, false);
-
-
-
-
-
-
-
-
-
-
-
-
-
+    document.querySelector('#output').innerHTML = finaldata;

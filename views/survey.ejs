@@ -17,101 +17,93 @@
 <a href="/users/logout" class="btn btn-secondary" style="float: right; padding-bottom: 4px;">Logout</a>
 <h1 class="mt-4">Dashboard</h1>
 <p class="lead mb-3">Welcome <strong style="font-weight: lighter; " id="name"><%= user.name %></strong></p>
-<div style="background-color: rgb(255, 255, 255);">
+<di style="background-color: rgb(255, 255, 255);">
       <h4>Answer the following questions</h4>
-  
-  <!-- 1st button field -->
-  <div>
-  <div class="btn-group">
-    <button type="button" class="btn btn-danger dropdown-toggle mb-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Favorite Subject
-    </button>
-    <div class="dropdown-menu pb-5">
-      <a class="dropdown-item" href="#">STEM</a>
-      <a class="dropdown-item" href="#">English</a>
-      <a class="dropdown-item" href="#">Social Science</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Arts</a>
-    </div>
-  </div>
-  </div>
-  <!-- 1st button field -->
-  <div>
-  <div class="btn-group">
-    <button type="button" class="btn btn-danger dropdown-toggle mb-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      
-      Hobbies
-    </button>
-    
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Sports</a>
-      <a class="dropdown-item" href="#">Literature</a>
-      <a class="dropdown-item" href="#">Music</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Technology</a>
-    </div>
-  </div>
-  </div>
-  <!-- 3rd button field -->
-  <div>
-    <div class="btn-group">
-      <button type="button" class="btn btn-danger dropdown-toggle mb-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        
-        Intensity
-      </button>
-      
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Laissez-Faire</a>
-        <a class="dropdown-item" href="#">Intense</a>
-        <a class="dropdown-item" href="#">Very Intense</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Autocratic</a>
-      </div>
-    </div>
-    </div>
-    <!-- 4th button field -->
-  <div>
-    <div class="btn-group">
-      <button type="button" class="btn btn-danger dropdown-toggle mb-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        
-        Demand
-      </button>
-      
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">High</a>
-        <a class="dropdown-item" href="#">Medium</a>
-        <a class="dropdown-item" href="#">Low</a>
-        <div class="dropdown-divider"></div>
-      </div>
-    </div>
-    </div>
-    <!-- 5th button field -->
-  <div>
-    <div class="btn-group">
-      <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        
-      Work Environment
-      </button>
-      
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Standing</a>
-        <a class="dropdown-item" href="#">Traveling</a>
-        <a class="dropdown-item" href="#">Outdoors</a>
-        <a class="dropdown-item" href="#">Office</a>
-        <a class="dropdown-item" href="#">Combination</a>
-        <div class="dropdown-divider"></div>
-      </div>
-    </div>
-    </div>
-    
-    
+      <form id="quiz" name="quiz">
+        <h1 id="q1">Favorite Subject:</h1><br>
+        <label class="container">
+          <input type="radio" class="mc1" id="mc" name="question1" value="Science">Science<br>
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">
+          <input type="radio" class="mc2" id="mc" name="question1" value="Math">Math<br>
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">
+          <input type="radio" class="mc3" id="mc" name="question1" value="Comp sci">Computer Science<br>
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">
+          <input type="radio" class="mc4" id="mc" name="question1" value="Social Science">Social Science<br>
+          <span class="checkmark"></span>
+        </label>
+          <h1 id="q2">Hobbies:</h1><br>
+        <label class="container">
+          <input type="radio" class="mc5" id="mc" name="question2" value="Sports">Sports<br>
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">
+          <input type="radio" class="mc6" id="mc" name="question2" value="Music">Music<br>
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">
+          <input type="radio" class="mc7" id="mc" name="question2" value="Literature">Literature<br>
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">
+          <input type="radio" class="mc8" id="mc" name="question2" value="Technology">Technology<br>
+          <span class="checkmark"></span>
+        </label>
+         <h1 id="q3">Intensity:</h1><br>
+        <label class="container">
+          <input type="radio" class="mc9" id="mc" name="question3" value="Intense">Intense<br>
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">
+          <input type="radio" class="mc10" id="mc" name="question3" value="Highly Intense">Highly Intense<br>
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">
+          <input type="radio" class="mc11" id="mc" name="question3" value="Laissez-faire">Laissez-faire<br>
+          <span class="checkmark"></span>
+        </label>
+        <h1 id="q4">probability of getting hired after 4 years:</h1><br>
+        <label class="container">
+          <input type="radio" class="mc12" id="mc" name="question4" value="Low">Low<br>
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">
+          <input type="radio" class="mc13" id="mc" name="question4" value="Medium">Medium<br>
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">
+          <input type="radio" class="mc14" id="mc" name="question4" value="High">High<br>
+          <span class="checkmark"></span>
+        </label>
+        <h1 id="q5">preferred work environment:</h1><br>
+        <label class="container">
+          <input type="radio" class="mc15" id="mc" name="question5" value="Office">Office<br>
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">
+          <input type="radio" class="mc16" id="mc" name="question5" value="Standing">Standing<br>
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">
+          <input type="radio" class="mc17" id="mc" name="question5" value="Traveling">Traveling<br>
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">
+          <input type="radio" class="mc18" id="mc" name="question5" value="Outdoors">Outdoors<br>
+          <span class="checkmark"></span>
+        </label>
+     </form>
+     <div id="output" name="output"></div>
 
-  
-  
-  </div>
-  </div>
-</div>
+     <button name="submit" onclick="check()">Submit</button>
 
+<p id="message"></p>
+<p id="number_correct"></p>
 
 
 
