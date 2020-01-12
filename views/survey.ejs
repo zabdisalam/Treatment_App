@@ -1,0 +1,122 @@
+<style>
+.submit_btn button:hover {
+  background-color: #555;
+  color: white;
+}
+.submit_btn button{
+  float: right; 
+  text-decoration: none; 
+  background-color: #3498DB; 
+  color: black;
+  padding: 12px;
+  border-radius: 12px;
+  
+}
+
+</style>
+<a href="/users/logout" class="btn btn-secondary" style="float: right; padding-bottom: 4px;">Logout</a>
+<h1 class="mt-4">Dashboard</h1>
+<p class="lead mb-3">Welcome <strong style="font-weight: lighter; " id="name"><%= user.name %></strong></p>
+<div style="background-color: rgb(255, 255, 255);">
+      <h4>Answer the following questions</h4>
+  
+  <!-- 1st button field -->
+  <div>
+  <div class="btn-group">
+    <button type="button" class="btn btn-danger dropdown-toggle mb-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Favorite Subject
+    </button>
+    <div class="dropdown-menu pb-5">
+      <a class="dropdown-item" href="#">STEM</a>
+      <a class="dropdown-item" href="#">English</a>
+      <a class="dropdown-item" href="#">Social Science</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Arts</a>
+    </div>
+  </div>
+  </div>
+  <!-- 1st button field -->
+  <div>
+  <div class="btn-group">
+    <button type="button" class="btn btn-danger dropdown-toggle mb-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      
+      Hobbies
+    </button>
+    
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Sports</a>
+      <a class="dropdown-item" href="#">Literature</a>
+      <a class="dropdown-item" href="#">Music</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Technology</a>
+    </div>
+  </div>
+  </div>
+  <!-- 3rd button field -->
+  <div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-danger dropdown-toggle mb-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        
+        Intensity
+      </button>
+      
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Laissez-Faire</a>
+        <a class="dropdown-item" href="#">Intense</a>
+        <a class="dropdown-item" href="#">Very Intense</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Autocratic</a>
+      </div>
+    </div>
+    </div>
+    <!-- 4th button field -->
+  <div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-danger dropdown-toggle mb-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        
+        Demand
+      </button>
+      
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">High</a>
+        <a class="dropdown-item" href="#">Medium</a>
+        <a class="dropdown-item" href="#">Low</a>
+        <div class="dropdown-divider"></div>
+      </div>
+    </div>
+    </div>
+    <!-- 5th button field -->
+  <div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        
+      Work Environment
+      </button>
+      
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Standing</a>
+        <a class="dropdown-item" href="#">Traveling</a>
+        <a class="dropdown-item" href="#">Outdoors</a>
+        <a class="dropdown-item" href="#">Office</a>
+        <a class="dropdown-item" href="#">Combination</a>
+        <div class="dropdown-divider"></div>
+      </div>
+    </div>
+    </div>
+    
+    
+
+  
+  
+  </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+

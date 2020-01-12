@@ -2,6 +2,8 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
 const passport = require('passport');
+const mongoose = require('mongoose');
+const Combination = require('../models/Field');
 
 // Load User model
 const User = require('../models/User');
@@ -86,6 +88,25 @@ router.post('/login', (req, res, next) => {
     failureFlash: true
   })(req, res, next);
 });
+
+// //combos
+// router.post('/results', (req, res, next) => {
+//   var combinations = new Combination();
+//   combinations.Name = req.body.Name;
+//   combinations.Favourite_Subject = req.body.Favourite_Subject;
+//   combinations.Hobbies = req.body.Hobbies;
+//   combinations.Intensity = req.body.Intensity;
+//   combinations.Probability_of_getting_a_job_after_four_years = req.body.Probability_of_getting_a_job_after_four_years;
+//   combinations.Preferred_workspace = req.body.Preferred_workspace;
+//   combinations.Description = req.body.Description;
+//   combinations.Top_Programs = req.body.Top_Programs;
+//   combinations.save();
+// });
+
+// // router.get('/results', async(req, res, next) => {
+// //   const users = await User.find();
+// //   res.json(users);
+// // })
 
 // Logout
 router.get('/logout', (req, res) => {

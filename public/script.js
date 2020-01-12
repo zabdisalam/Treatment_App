@@ -19,17 +19,17 @@ function check() {
      var result3;
 
     if(questionOne == "no") {
-       result1 = name + ` doesn't smoke. `;
+       result1 = name + ` doesn't like science. `;
        document.querySelector('#sub').style.visibility = 'hidden';
   } else if(questionOne == "yes") {   
        document.querySelector('#sub').style.visibility = 'visible';
-       result1 = name + ` smokes ` + subQuestion + ' cigarretes a day. ';
+       result1 = name + ` is interested in ` + subQuestion;
   } else if (subQuestion !== null && questionOne == "yes"){
-       result1 = name + ` smokes.`;
+       result1 = name + ` is interested in science`;
   } if(questionTwo == "no") {
-       result2 = name + ` doesn't drink. `;
+       result2 = name + ` doesn't like math. `;
   } else if(questionTwo == "yes") {
-     result2 = name + ` drinks. `;
+     result2 = name + ` is interested in math. `;
   } if(questionThree == "yes") {
        result3 = name + ` has a good diet. `;
   } else if(questionThree == "no") {
@@ -47,12 +47,20 @@ function check() {
   console.log(typeof(subQuestion));
 }
 
-QUESTIONONE.addEventListener("click", check, false);
-QUESTIONTWO.addEventListener("click", check, false);
-QUESTIONTHREE.addEventListener("click", check, false);
-QUESTIONFOUR.addEventListener("click", check, false);
 QUESTIONFIVE.addEventListener("click", check, false);
 QUESTIONSIX.addEventListener("click", check, false);
 SUBQUESTION.addEventListener("keyup", check, false);
 OUTPUT.addEventListener("click", check, false);
+
+
+
+
+
+
+
+
+
+
+
+
 

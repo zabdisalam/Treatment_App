@@ -12,28 +12,14 @@ router.get('/dashboard', ensureAuthenticated, (req, res) =>
   })
 );
 
-router.get('/dashboard/users/Habits', ensureAuthenticated, (req, res, next) => {
-  res.render('Habits', {
+router.get('/dashboard/users/survey', ensureAuthenticated, (req, res, next) => {
+  res.render('survey', {
     user: req.user
   });
 });
 
-router.get('/dashboard/users/Sleep', ensureAuthenticated, (req, res, next) => {
-  res.render('Sleep', {
-    user: req.user
-  });
-});
-
-router.get('/dashboard/users/Exercise', ensureAuthenticated, (req, res, next) => {
-  res.render('Exercise', {
-    user: req.user
-  });
-});
-
-router.get('/dashboard/users/Ergonomics', ensureAuthenticated, (req, res, next) => {
-  res.render('Ergonomics', {
-    user: req.user
-  });
-});
+ router.get('/dashboard/users/results', ensureAuthenticated, (req, res, next) => {
+   res.render('results')
+})
 
 module.exports = router;
