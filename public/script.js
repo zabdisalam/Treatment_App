@@ -44,7 +44,3 @@ function check() {
       document.querySelector('#number_correct').innerHTML = "Public Relations is an excellent field to go into because it is important for every business and organization. The skills within the field such as writing, speaking, research and establishing relationships are important to any job so you will graduate prepared with real-world skills. There are so many job opportunities within public relations that span from nonprofit organizations to PR firms to high-powered businesses. If you like a fast-paced, exciting environment where every day will be a challenge, then you should study public relations.";
     }
 }
-
-function open(){
-  window.open("C:/Users/Zakaria%20Abdisalam/Documents/Treatment_App/pure/pricing.html");
-}
